@@ -4,6 +4,7 @@ import c1 from '../images/c1.jpg';
 import c2 from '../images/c2.jpg';
 import c3 from '../images/c3.jpg';
 import c4 from '../images/c4.jpg';
+import FFF from '../images/FFF (1).png';
 
 
 const MainCarousel = () => (
@@ -42,6 +43,13 @@ const MainCarousel = () => (
           <img
             alt="10x10"
             src={c4}
+            style={styles.image}
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            alt="10x10"
+            src={FFF (1)}
             style={styles.image}
           />
         </Carousel.Item>
