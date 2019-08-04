@@ -1,26 +1,69 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+// import { render } from "react-dom";
+import logo from './i+f logos.png';
 import './App.css';
+// import MailchimpSubscribe from "react-mailchimp-subscribe";
+import Mailchimp from 'react-mailchimp-form';
+import Carousel from './carousel/Carousel';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="Ina_Forbes">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
-    </div>
+      <Carousel/>
+      <br/>
+      <Email/>
+      <br/>
+      <br/>
+      <br/>
+</div>
   );
 }
 
+class Email extends Component {
+  render() {
+    return (
+      
+      <Mailchimp
+      action="https://gmail.us3.list-manage.com/subscribe/post?u=4183d66f3f46f57c5e4f2684d&amp;id=bc5c0fb730" method="POST"
+
+      fields={[
+        {
+          name: 'b_email',
+          placeholder: 'Email',
+          type: 'email',
+          required: true,
+          value: '',
+          id: 'b_email',
+          tabindex: '-1'
+        },
+        {
+          name: 'b_name',
+          placeholder: 'Full Name',
+          type: 'text',
+          required: true,
+          value: '',
+          id: 'b_name',
+          tabindex: '-1'
+        }
+      ]}
+      messages = {
+        {
+          sending: "Sending...",
+          success: "Thank you for subscribing!",
+          error: "An unexpected internal error has occured.",
+          empty: "You must write a valid e-mail.",
+          duplicate: "Too many subscribe attempts for this email address",
+          button: "Subscribe!"
+        }
+      }
+      className='SubMail'
+      />
+    )
+  }
+}
+
 export default App;
+ 
