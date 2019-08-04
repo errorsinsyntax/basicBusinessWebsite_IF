@@ -16,6 +16,7 @@ class App extends React.Component {
       </header>
       <Carousel/>
       <br/>
+      <h2>ina + forbes email sign up</h2>
       <Email/>
       <br/>
       <br/>

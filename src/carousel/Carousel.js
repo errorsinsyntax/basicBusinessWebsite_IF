@@ -1,9 +1,9 @@
 import React from 'react';
-import { Carousel, } from 'react-bootstrap-carousel';
-import c1 from '../images/c1.jpg';
-import c2 from '../images/c2.jpg';
-import c3 from '../images/c3.jpg';
-import c4 from '../images/c4.jpg';
+import { Carousel, } from 'react-bootstrap';
+// import c1 from '../images/c1.jpg';
+// import c2 from '../images/c2.jpg';
+// import c3 from '../images/c3.jpg';
+// import c4 from '../images/c4.jpg';
 import FFF from '../images/FFF (1).png';
 
 
@@ -17,12 +17,12 @@ const MainCarousel = () => (
       >
         <Carousel.Item>
           <img
-            alt="10x10"
+            alt="100x100"
             src={FFF}
-            // style={styles.image}
+            style={styles.image}
           />
         </Carousel.Item>
-        <Carousel.Item>
+        {/* <Carousel.Item>
           <img
             alt="100x100"
             src={c1}
@@ -51,7 +51,7 @@ const MainCarousel = () => (
             src={c4}
             style={styles.image}
           />
-        </Carousel.Item>
+        </Carousel.Item> */}
       </Carousel>
     </div>
   );
@@ -65,9 +65,9 @@ const MainCarousel = () => (
       justifyContent: 'center',
     },
     image: {
-      height: '10vh',
+      height: '50vh',
       minHeight: 'calc(100vh-136px)',
-      width: '50%',
-      marginTop: '75px',
+      width: '75%',
+      // marginTop: '75px',
     }
   }
