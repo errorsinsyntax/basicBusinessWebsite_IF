@@ -6,7 +6,9 @@ import './App.css';
 import Mailchimp from 'react-mailchimp-form';
 import Carousel from './carousel/Carousel';
 
-function App() {
+
+class App extends React.Component {
+  render(){
   return (
     <div className="App">
       <header className="Ina_Forbes">
@@ -20,6 +22,7 @@ function App() {
       <br/>
 </div>
   );
+  }
 }
 
 class Email extends Component {

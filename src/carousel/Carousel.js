@@ -14,13 +14,19 @@ const MainCarousel = () => (
         indicators={false}
         interval={3000}
         controls={false}
-        // style={styles.main}
       >
+        <Carousel.Item>
+          <img
+            alt="10x10"
+            src={FFF}
+            // style={styles.image}
+          />
+        </Carousel.Item>
         <Carousel.Item>
           <img
             alt="100x100"
             src={c1}
-            style={styles.image}
+            // style={styles.image}
           />
         </Carousel.Item>
   
@@ -28,7 +34,7 @@ const MainCarousel = () => (
           <img
             alt="100x100"
             src={c2}
-            style={styles.image}
+            // style={styles.image}
           />
         </Carousel.Item>
   
@@ -43,13 +49,6 @@ const MainCarousel = () => (
           <img
             alt="10x10"
             src={c4}
-            style={styles.image}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            alt="10x10"
-            src={FFF (1)}
             style={styles.image}
           />
         </Carousel.Item>
