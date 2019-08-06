@@ -10,6 +10,7 @@
     "react-github-corner": "^2.3.0",
     "react-mailchimp-form": "^1.0.2",
     "react-mailchimp-subscribe": "^2.1.0",
+    "react-mailto": "^0.4.0",
     "react-scripts": "3.0.1",
     "react-slideshow-image": "^1.2.1"
   },
