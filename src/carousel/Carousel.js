@@ -3,7 +3,6 @@ import { Carousel, Media } from 'react-bootstrap';
 import c1 from '../images/c1.jpg';
 import c2 from '../images/c2.jpg';
 import c3 from '../images/c3.jpg';
-import c4 from '../images/c4.jpg';
 import FFF from '../images/FFF.png';
 
 
@@ -18,7 +17,7 @@ const MainCarousel = () => (
             >
               <Carousel.Item>
                 <img
-                className="gallery"
+                className="Gallery"
                   alt="FFF"
                   src={FFF}
                   style={styles.image}
@@ -26,7 +25,7 @@ const MainCarousel = () => (
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                className="gallery"
+                className="Gallery"
                   alt="c1"
                   src={c1}
                   // style={styles.image}
@@ -34,26 +33,17 @@ const MainCarousel = () => (
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  className="gallery"
+                  className="Gallery"
                   alt="c2"
                   src={c2}
                   // style={styles.image}
                 />
               </Carousel.Item>
-        
               <Carousel.Item>
                 <img
-                  className="gallery"
+                  className="Gallery"
                   alt="c3"
                   src={c3}
-                  style={styles.image}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="gallery"
-                  alt="c4"
-                  src={c4}
                   style={styles.image}
                 />
               </Carousel.Item>

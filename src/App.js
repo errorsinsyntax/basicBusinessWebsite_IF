@@ -3,21 +3,27 @@ import React from 'react';
 import logo from './i+f logos.png';
 import './App.css';
 import Carousel from './carousel/Carousel';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class App extends React.Component {
   render(){
   return (
-    <div>
-      <div className="App">
-        <header className="Ina_Forbes">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-        <Carousel/>
-        <br/>
-        
-        <h1><a href="http://eepurl.com/gy7MFH" method="POST">Stay in the Loop!</a></h1>
-      </div>
-</div>
+    <Container>
+      <Row>
+        <Col>
+          <div>
+            <div className="App">
+              <header className="Ina_Forbes">
+                <img src={logo} className="App-logo" alt="logo" />
+              </header>
+              <Carousel/>
+              <br/>
+              <h1><a href="http://eepurl.com/gy7MFH" method="POST">Stay in the Loop!</a></h1>
+            </div>
+          </div>
+        </Col>   
+      </Row>
+    </Container>  
   );
   }
 }
