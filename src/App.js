@@ -17,8 +17,8 @@ class App extends React.Component {
         </header>
         <Carousel/>
         <br/>
-        <h1>Stay in the Loop!</h1>
-        <h2><a href="https://gmail.us3.list-manage.com/subscribe/post?u=4183d66f3f46f57c5e4f2684d&amp;id=bc5c0fb730" method="POST">info@inaforbes.com</a></h2>
+        
+        <h1><a href="https://gmail.us3.list-manage.com/subscribe/post?u=4183d66f3f46f57c5e4f2684d&amp;id=bc5c0fb730" method="POST">Stay in the Loop!</a></h1>
       </div>
 </div>
   );
