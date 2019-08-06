@@ -17,9 +17,9 @@ const MainCarousel = () => (
       >
         <Carousel.Item>
           <img
-            alt="10x10"
+            alt="100x100"
             src={FFF}
-            // style={styles.image}
+            style={styles.image}
           />
         </Carousel.Item>
         {/* <Carousel.Item>
@@ -65,9 +65,9 @@ const MainCarousel = () => (
       justifyContent: 'center',
     },
     image: {
-      height: '10vh',
+      height: '50vh',
       minHeight: 'calc(100vh-136px)',
-      width: '50%',
-      marginTop: '75px',
+      width: '75%',
+      // marginTop: '75px',
     }
   }
