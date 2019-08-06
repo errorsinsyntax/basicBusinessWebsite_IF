@@ -1,58 +1,65 @@
 import React from 'react';
-import { Carousel, } from 'react-bootstrap';
-// import c1 from '../images/c1.jpg';
-// import c2 from '../images/c2.jpg';
-// import c3 from '../images/c3.jpg';
-// import c4 from '../images/c4.jpg';
+import { Carousel, Media } from 'react-bootstrap';
+import c1 from '../images/c1.jpg';
+import c2 from '../images/c2.jpg';
+import c3 from '../images/c3.jpg';
+import c4 from '../images/c4.jpg';
 import FFF from '../images/FFF.png';
 
 
 const MainCarousel = () => (
     <div>
-      <Carousel
-        slide={true}
-        indicators={false}
-        interval={3000}
-        controls={false}
-      >
-        <Carousel.Item>
-          <img
-            alt="100x100"
-            src={FFF}
-            style={styles.image}
-          />
-        </Carousel.Item>
-        {/* <Carousel.Item>
-          <img
-            alt="100x100"
-            src={c1}
-            // style={styles.image}
-          />
-        </Carousel.Item>
-  
-        <Carousel.Item>
-          <img
-            alt="100x100"
-            src={c2}
-            // style={styles.image}
-          />
-        </Carousel.Item>
-  
-        <Carousel.Item>
-          <img
-            alt="10x10"
-            src={c3}
-            style={styles.image}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            alt="10x10"
-            src={c4}
-            style={styles.image}
-          />
-        </Carousel.Item> */}
-      </Carousel>
+      <Media>
+        <Media.Body>
+            <Carousel
+              controls={false}
+              indicators={false}
+              interval={2000}
+            >
+              <Carousel.Item>
+                <img
+                className="gallery"
+                  alt="FFF"
+                  src={FFF}
+                  style={styles.image}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                className="gallery"
+                  alt="c1"
+                  src={c1}
+                  // style={styles.image}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="gallery"
+                  alt="c2"
+                  src={c2}
+                  // style={styles.image}
+                />
+              </Carousel.Item>
+        
+              <Carousel.Item>
+                <img
+                  className="gallery"
+                  alt="c3"
+                  src={c3}
+                  style={styles.image}
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="gallery"
+                  alt="c4"
+                  src={c4}
+                  style={styles.image}
+                />
+              </Carousel.Item>
+            </Carousel>
+        </Media.Body>
+      </Media>
     </div>
   );
   

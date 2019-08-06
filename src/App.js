@@ -1,11 +1,8 @@
-import React, { Component, } from 'react';
+import React from 'react';
 // import { render } from "react-dom";
 import logo from './i+f logos.png';
 import './App.css';
-// import MailchimpSubscribe from "react-mailchimp-subscribe";
-// import Mailchimp from 'react-mailchimp-form';
 import Carousel from './carousel/Carousel';
-
 
 class App extends React.Component {
   render(){
