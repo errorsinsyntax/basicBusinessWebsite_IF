@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import c1 from '../images/c1.jpg';
 import c2 from '../images/c2.jpg';
-// import c3 from '../images/c3.jpg';
+import c3 from '../images/c3.jpg';
 import FFF from '../images/FFF.png';
 
 
@@ -40,13 +40,13 @@ const MainCarousel = () => (
                 <img
                   className="Gallery"
                   justifyContent="center" 
-                  // flexdirection="row"
+                  flexdirection="column"
                   alt="c2"
                   src={c2}
                   // style={styles.image}
                 />
               </Carousel.Item>
-              {/* <Carousel.Item>
+              <Carousel.Item>
                 <img
                   className="Gallery"
                     justifyContent="center" 
@@ -55,7 +55,7 @@ const MainCarousel = () => (
                     src={c3}
                     style={styles.image}
                 />
-              </Carousel.Item> */}
+              </Carousel.Item>
             </Carousel>
           </Container>
     </div>
