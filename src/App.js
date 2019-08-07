@@ -41,6 +41,7 @@ class App extends React.Component {
             <Row >
                 <Col>
                     <h2><a 
+                    className="App"
                     justifyContent="center" 
                     flexdirection="row"
                     href="http://eepurl.com/gy7MFH" 
