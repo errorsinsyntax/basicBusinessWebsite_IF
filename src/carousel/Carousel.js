@@ -43,7 +43,7 @@ const MainCarousel = () => (
                   flexdirection="column"
                   alt="c2"
                   src={c2}
-                  // style={styles.image}
+                  style={styles.image}
                 />
               </Carousel.Item>
               <Carousel.Item>
