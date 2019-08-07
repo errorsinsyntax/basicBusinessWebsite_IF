@@ -16,12 +16,20 @@ class App extends React.Component {
       <Row className="justify-content-space-evenly">
         <Col>
           <div>
-            <div className="App">
+            <div className="Gallery">
               <header className="Ina_Forbes">
                 <img 
-                                  style={styles.image}
-                                  src={logo} className="App-logo" alt="logo" />
+                  style={styles.image}
+                  src={logo} 
+                  flexdirection="column"
+                  className="App-logo" 
+                  alt="logo" 
+                  />
               </header>
+                  </div>
+                </div>
+        </Col>   
+      </Row>
               <Row className="justify-content-space-evenly">
                 <Col>
                     <img
@@ -39,31 +47,23 @@ class App extends React.Component {
                     <Carousel/>
                 </Col>
             </Row>
-              <br/>
-            <Row className="justify-content-space-evenly">
+            <Row >
                 <Col>
-                    <h2><a 
-                    className="App"
-                    justifyContent="center" 
-                    flexdirection="row"
-                    href="http://eepurl.com/gy7MFH" 
-                    method="POST"
-                    style={styles.title}
+                    <a 
+                        href="http://eepurl.com/gy7MFH" 
+                        method="POST"
                     >
                       <img
                       className="Gallery"
                       justifyContent="center" 
                       flexdirection="column"
-                        alt="FFF"
+                        alt="SitL"
                         src={SitL}
-                        style={styles.title}
-                      /></a></h2>
+                        style={styles.image}
+                      />
+                    </a>
                 </Col>
               </Row>
-            </div>
-          </div>
-        </Col>   
-      </Row>
     </Container>  
   );
   }
@@ -134,26 +134,30 @@ const styles = {
   },
   center: {
     display: 'flex',
-    flexDirection: 'column',
     justifyContent: 'center',
   },
   image: {
     // height: '100vh',
     minHeight: 'calc(100vh-136px)',
     width: '100%',
-    marginTop: '75px',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    marginTop: '15px',
+    display: 'flex',
+    alignItems: 'flex-start',
+    alignContent: 'flex-start',
   },
   title: {
     // height: '100%',
     textColor:'black',
-    display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
     flexWrap: 'nowrap',
-    alignItems: 'flex-start',
-    alignContent: 'flex-start',
     marginLeft: '-200px',
     marginRight: '-200px',
+    minHeight: 'calc(100vh-136px)',
+    width: '100%',
+    marginTop: '75px',
   },
   subtitle: {
     height: '250px',
