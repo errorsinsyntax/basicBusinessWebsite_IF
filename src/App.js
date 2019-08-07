@@ -9,16 +9,21 @@ class App extends React.Component {
   render(){
   return (
     <Container>
-      <Row>
-        <Col>
+      <Row className="justify-content-space-evenly">
+        <Col md="auto">
           <div>
             <div className="App">
               <header className="Ina_Forbes">
                 <img src={logo} className="App-logo" alt="logo" />
               </header>
+            <Row>
               <Carousel/>
+            </Row>
               <br/>
-              <h1><a href="http://eepurl.com/gy7MFH" method="POST">Stay in the Loop!</a></h1>
+              <h1><a 
+              href="http://eepurl.com/gy7MFH" 
+              method="POST">
+                Stay in the Loop!</a></h1>
             </div>
           </div>
         </Col>   
