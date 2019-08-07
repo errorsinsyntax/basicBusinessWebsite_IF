@@ -3,27 +3,53 @@ import React from 'react';
 import logo from './i+f logos.png';
 import './App.css';
 import Carousel from './carousel/Carousel';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, } from 'react-bootstrap';
+import FFF from './images/FFF.png';
+
 
 class App extends React.Component {
   render(){
   return (
     <Container>
       <Row className="justify-content-space-evenly">
-        <Col md="auto">
+        <Col>
           <div>
             <div className="App">
               <header className="Ina_Forbes">
-                <img src={logo} className="App-logo" alt="logo" />
+                <img 
+                                  style={styles.image}
+                                  src={logo} className="App-logo" alt="logo" />
               </header>
+              <Row className="justify-content-space-evenly">
+                <Col>
+                    <img
+                      className="Gallery"
+                      justifyContent="center" 
+                      flexdirection="column"
+                        alt="FFF"
+                        src={FFF}
+                        style={styles.image}
+                      />
+                </Col>
+              </Row>
             <Row>
-              <Carousel/>
+                <Col>
+                    <Carousel/>
+                </Col>
             </Row>
               <br/>
-              <h1><a 
-              href="http://eepurl.com/gy7MFH" 
-              method="POST">
-                Stay in the Loop!</a></h1>
+            <Row >
+                <Col>
+                    <h2><a 
+                    justifyContent="center" 
+                    flexdirection="row"
+                    href="http://eepurl.com/gy7MFH" 
+                    method="POST"
+                    style={styles.center}
+                    >
+                      Stay in the Loop!</a></h2>
+                </Col>
+              </Row>
             </div>
           </div>
         </Col>   
@@ -78,4 +104,53 @@ class App extends React.Component {
 // }
 
 export default App;
+
+const styles = {
+  topLine: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    alignContent: 'space-evenly',
+    marginLeft: '125px',
+    marginRight: '125px',
+  },
+  bottomLine: {
+    width: '25%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center'
+  },
+  center: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  image: {
+    // height: '100vh',
+    minHeight: 'calc(100vh-136px)',
+    width: '100%',
+    marginTop: '75px',
+  },
+  title: {
+    // height: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    flexWrap: 'nowrap',
+    alignItems: 'flex-start',
+    alignContent: 'flex-start',
+    marginLeft: '-200px',
+    marginRight: '-200px',
+  },
+  subtitle: {
+    height: '250px',
+  },
+  caption: {
+    height: '550px',
+  },
+
+}
+
  

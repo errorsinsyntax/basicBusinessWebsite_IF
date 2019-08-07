@@ -3,7 +3,7 @@ import { Carousel, Container } from 'react-bootstrap';
 import c1 from '../images/c1.jpg';
 import c2 from '../images/c2.jpg';
 import c3 from '../images/c3.jpg';
-import FFF from '../images/FFF.png';
+// import FFF from '../images/FFF.png';
 
 
 const MainCarousel = () => (
@@ -16,16 +16,6 @@ const MainCarousel = () => (
               indicators={false}
               interval={2000}
             >
-              <Carousel.Item>
-                <img
-                className="Gallery"
-                justifyContent="center" 
-                flexdirection="column"
-                  alt="FFF"
-                  src={FFF}
-                  style={styles.image}
-                />
-              </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="Gallery"
