@@ -5,6 +5,8 @@ import './App.css';
 import Carousel from './carousel/Carousel';
 import { Container, Row, Col, } from 'react-bootstrap';
 import FFF from './images/FFF.png';
+import SitL from './images/SitL.png';
+
 
 
 class App extends React.Component {
@@ -38,7 +40,7 @@ class App extends React.Component {
                 </Col>
             </Row>
               <br/>
-            <Row >
+            <Row className="justify-content-space-evenly">
                 <Col>
                     <h2><a 
                     className="App"
@@ -46,9 +48,16 @@ class App extends React.Component {
                     flexdirection="row"
                     href="http://eepurl.com/gy7MFH" 
                     method="POST"
-                    style={styles.center}
+                    style={styles.title}
                     >
-                      Stay in the Loop!</a></h2>
+                      <img
+                      className="Gallery"
+                      justifyContent="center" 
+                      flexdirection="column"
+                        alt="FFF"
+                        src={SitL}
+                        style={styles.title}
+                      /></a></h2>
                 </Col>
               </Row>
             </div>
@@ -136,6 +145,7 @@ const styles = {
   },
   title: {
     // height: '100%',
+    textColor:'black',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
