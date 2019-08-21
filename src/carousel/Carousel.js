@@ -3,15 +3,12 @@ import { Carousel, Container } from 'react-bootstrap';
 import c1 from '../images/c1.jpg';
 import c2 from '../images/c2.jpg';
 import c3 from '../images/c3.jpg';
-// import FFF from '../images/FFF.png';
 
 
 const MainCarousel = () => (
     <div>
       <Container>
             <Carousel 
-              // justifyContent="center" 
-              // flexdirection="column"
               controls={false}
               indicators={false}
               interval={2000}

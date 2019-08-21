@@ -1,10 +1,9 @@
 import React from 'react';
-// import { render } from "react-dom";
 import logo from './i+f logos.png';
 import './App.css';
 import Carousel from './carousel/Carousel';
 import { Container, Row, Col, } from 'react-bootstrap';
-import FFF from './images/FFF.png';
+import Flyer819 from './images/Flyer819.jpg';
 import SitL from './images/SitL.png';
 
 
@@ -36,8 +35,8 @@ class App extends React.Component {
                       className="Gallery"
                       justifyContent="center" 
                       flexdirection="column"
-                        alt="FFF"
-                        src={FFF}
+                        alt="819"
+                        src={Flyer819}
                         style={styles.image}
                       />
                 </Col>
@@ -68,50 +67,6 @@ class App extends React.Component {
   );
   }
 }
-
-
-// class Email extends Component {
-//   render() {
-//     return (
-      
-//       <Mailchimp
-//       action="https://gmail.us3.list-manage.com/subscribe/post?u=4183d66f3f46f57c5e4f2684d&amp;id=bc5c0fb730" method="POST"
-
-//       fields={[
-//         {
-//           name: 'b_email',
-//           placeholder: 'Email',
-//           type: 'email',
-//           required: true,
-//           value: '',
-//           id: 'b_email',
-//           tabindex: '-1'
-//         },
-//         {
-//           name: 'b_name',
-//           placeholder: 'Full Name',
-//           type: 'text',
-//           required: true,
-//           value: '',
-//           id: 'b_name',
-//           tabindex: '-1'
-//         }
-//       ]}
-//       messages = {
-//         {
-//           sending: "Sending...",
-//           success: "Thank you for subscribing!",
-//           error: "An unexpected internal error has occured.",
-//           empty: "You must write a valid e-mail.",
-//           duplicate: "Too many subscribe attempts for this email address",
-//           button: "Subscribe!"
-//         }
-//       }
-//       className='SubMail'
-//       />
-//     )
-//   }
-// }
 
 export default App;
 
