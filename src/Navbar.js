@@ -20,7 +20,8 @@ class Navbar extends React.Component {
                                           <ul class="navbar-nav mr-auto">
                                             <li class="nav-item">
                                               <a class="nav-link" 
-                                                  style={styles.navbar}                                             
+                                                  style={styles.navbar}  
+                                                  stackable                                           
                                                   href="http://www.inaforbes.com/" >
                                                     Home 
                                                     <span class="sr-only">(current)</span>
@@ -29,29 +30,28 @@ class Navbar extends React.Component {
                                             <li class="nav-item">
                                               <a 
                                                 class="nav-link"  
-                                                style={styles.navbar}                                             
+                                                style={styles.navbar}
+                                                stackable                                             
                                                 href="https://www.westernfronthotel.com/" >
                                                   the Western Front Hotel
                                               </a>
                                             </li>
                                           
                                           </ul>
-                                        </div>
-                                      </nav>
-                                </Col>  
-                                    <Col >
                                         <a class="navbar-brand" href="http://www.inaforbes.com/" >
                                             <img
                                               src={ifLogo}
                                               size="tiny"
-                                              style={styles.nb}                                             
+                                              style={styles.navbar}                                             
                                               stackable
                                               alt="ina+forbes"
-                                              position="center"
-                                              floated="cener"
+                                              // position="center"
+                                              // floated="cener"
                                               
-                                            />
+                                              />
                                         </a>
+                                              </div>
+                                              </nav>
                                     </Col>    
                                 </Row>
                         </Container>
@@ -98,7 +98,7 @@ class Navbar extends React.Component {
         padding: "2px",
         marginBottom: "-40px",
         marginTop: "-10px",
-        marginLeft: "400px",
+        marginLeft: "600px",
         height: "100px",
         // width: "auto"
       }
