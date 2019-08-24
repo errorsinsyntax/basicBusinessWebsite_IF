@@ -13,10 +13,7 @@ class App extends React.Component {
   return (
     <Container>
       <Row className="justify-content-space-evenly">
-        <Col>
         <Navbar/>
-        
-        </Col>
       </Row>
       <Row className="justify-content-space-evenly">
         <Col>
