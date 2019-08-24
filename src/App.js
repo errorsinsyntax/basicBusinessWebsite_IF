@@ -1,73 +1,35 @@
-import React from 'react';
-import logo from './i+f logos.png';
+import React, {Fragment} from 'react';
+// import logo from './i+f logos.png';
 import './App.css';
-import Carousel from './carousel/Carousel';
-import { Container, Row, Col, } from 'react-bootstrap';
-import Flyer819 from './images/Flyer819.jpg';
-import SitL from './images/SitL.png';
+// import { Container, Row, Col, } from 'react-bootstrap';
 import Navbar from './Navbar';
+import {Switch, Route} from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
+import About from './About';
+import Home from './Home';
+import Contact from './Contact';
 
 
 class App extends React.Component {
   render(){
   return (
-    <Container>
-      <Row className="justify-content-space-evenly">
-        <Navbar/>
-      </Row>
-      <Row className="justify-content-space-evenly">
-        <Col>
-          <div>
-            <div className="Gallery">
-              <header className="Ina_Forbes">
-                <img 
-                  style={styles.image}
-                  src={logo} 
-                  flexdirection="column"
-                  className="App-logo" 
-                  alt="ina+forbes" 
-                  />
-              </header>
-                  </div>
-                </div>
-        </Col>   
-      </Row>
-              <Row className="justify-content-space-evenly">
-                <Col>
-                    <img
-                      className="Gallery"
-                      justifyContent="center" 
-                      flexdirection="column"
-                        alt="819"
-                        src={Flyer819}
-                        style={styles.image}
-                      />
-                </Col>
-              </Row>
-            <Row>
-                <Col>
-                    <Carousel/>
-                </Col>
-            </Row>
-            <Row >
-                <Col>
-                    <a 
-                        href="http://eepurl.com/gy7MFH" 
-                        method="POST"
-                    >
-                      <img
-                      className="Gallery"
-                      justifyContent="center" 
-                      flexdirection="column"
-                        alt="Email Sign Up"
-                        src={SitL}
-                        style={styles.image}
-                      />
-                    </a>
-                </Col>
-              </Row>
-    </Container>  
+    <Fragment>
+          <div style={styles.nav}>
+              <Navbar/>
+          </div> 
+          <ScrollToTop> 
+           
+    <Switch>
+      <Route exact path='/'  component={Home}/>
+      <Route exact path='/home'  component={Home}/>
+      <Route exact path='/about'  component={About}/>
+      <Route exact path='/contact'  component={Contact}/>
+    </Switch>
+
+    </ScrollToTop>
+    </Fragment>
   );
+
   }
 }
 
@@ -130,6 +92,23 @@ const styles = {
     alignItems: 'flex-start',
     alignContent: 'flex-start',
   },
+    body: {
+      display: "flex",
+      flexDirection: "column",
+      minHeight: "100vh"
+    },
+    footer: {
+      margin: "auto auto 0 auto",
+      position: 'fixed',
+      zIndex: '99',
+      width: '100%'
+
+    },
+    nav: {
+      // position: 'fixed',
+      zIndex: '99',
+      width: '100%'
+    }
 
 }
 
