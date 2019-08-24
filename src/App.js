@@ -5,8 +5,7 @@ import Carousel from './carousel/Carousel';
 import { Container, Row, Col, } from 'react-bootstrap';
 import Flyer819 from './images/Flyer819.jpg';
 import SitL from './images/SitL.png';
-import twfHotel from './images/twfHotel.png';
-
+import Navbar from './Navbar';
 
 
 class App extends React.Component {
@@ -15,17 +14,8 @@ class App extends React.Component {
     <Container>
       <Row className="justify-content-space-evenly">
         <Col>
-        <a
-        href="https://www.westernfronthotel.com/" > 
-        <img 
-                  style={styles.caption}
-                  src={twfHotel} 
-                  flexdirection="row"
-                  className="Gallery" 
-                  alt="l" 
-                  
-                  />
-          </a>
+        <Navbar/>
+        
         </Col>
       </Row>
       <Row className="justify-content-space-evenly">
@@ -38,7 +28,7 @@ class App extends React.Component {
                   src={logo} 
                   flexdirection="column"
                   className="App-logo" 
-                  alt="logo" 
+                  alt="ina+forbes" 
                   />
               </header>
                   </div>
@@ -72,7 +62,7 @@ class App extends React.Component {
                       className="Gallery"
                       justifyContent="center" 
                       flexdirection="column"
-                        alt="SitL"
+                        alt="Email Sign Up"
                         src={SitL}
                         style={styles.image}
                       />
