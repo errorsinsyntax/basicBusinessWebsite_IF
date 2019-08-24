@@ -110,7 +110,6 @@ const styles = {
     textColor:'black',
     flexDirection: 'row',
     justifyContent: 'center',
-    flexWrap: 'nowrap',
     marginLeft: '-200px',
     marginRight: '-200px',
     minHeight: 'calc(100vh-136px)',

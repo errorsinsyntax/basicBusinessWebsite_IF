@@ -16,19 +16,16 @@ class Navbar extends React.Component {
                             <Row>   
                              <Col>                      
                                 <nav class="navbar navbar-expand-lg navbar-light" >
-                                        <div class="Gallery" id="navbarSupportedContent">
+                                        <div class="App-header" id="navbarSupportedContent">
                                           <ul class="navbar-nav mr-auto">
-                                           <Col>
+                                           
                                             <li class="nav-item">
                                               <a class="nav-link" 
                                                   style={styles.navbar}                                             
                                                   href="http://www.inaforbes.com/" >
                                                     Home 
-                                                    <span class="sr-only">(current)</span>
                                               </a>
                                             </li>
-                                            </Col>
-                                            <Col>
                                             <li class="nav-item">
                                               <a 
                                                 class="nav-link"  
@@ -37,23 +34,22 @@ class Navbar extends React.Component {
                                                   the Western Front Hotel
                                               </a>
                                             </li>
-                                            </Col>
-                                            <Col>
+                                            <li class="nav-item">
                                         <a class="navbar-brand" href="http://www.inaforbes.com/" >
                                             <img
                                               src={ifLogo}
                                               size="tiny"
-                                              style={styles.nb}                                             
+                                              style={styles.navbar2}                                             
                                               alt="ina+forbes"
-                                              position="center"
-                                              floated="cener"
+                                              // position="center"
+                                              // floated="cener"
                                               
                                               />
                                         </a>
-                                        </Col>
+                                        </li>
                                               </ul>
                                               </div>
-                                            </nav>
+                                  </nav>
                                     </Col>    
                                 </Row>
                         </Container>
@@ -82,24 +78,35 @@ class Navbar extends React.Component {
       navbar: {
         display: "flex",
         flexWrap: "nowrap",
-        justifyContent: "space-around",
-        flexDirection: "column",
+        justifyContent: "center",
+        flexDirection: "row",
         marginBottom: "-10px",
-        marginTop: "90px",
+        marginTop: "40px",
         width: "auto",
         fontSize: "16px"                                            
       
       },
+      navbar2: {
+        display: "flex",
+        flexWrap: "nowrap",
+        justifyContent: "center",
+        flexDirection: "row",
+        marginBottom: "-10px",
+        marginTop: "10px",
+        marginLeft: "100%",
+        marginRight: "100px",
+        width: "auto",
+        height: "100px",      
+      },
       nb: {
         display: "flex",
         flexWrap: "nowrap",
-        // justifyContent: "flex-start",
-        flexDirection: "column",
+        justifyContent: "center",
+        flexDirection: "row",
         marginBottom: "-40px",
         marginTop: "70px",
         marginLeft: "300px",
         marginRight: "100px",
-        height: "100px",
       }
     };
 
