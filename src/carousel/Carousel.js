@@ -13,7 +13,7 @@ const MainCarousel = () => (
             <Carousel 
               controls={false}
               indicators={false}
-              interval={2000}
+              interval={8000}
             >
               <Carousel.Item>
                 <img
