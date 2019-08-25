@@ -18,6 +18,7 @@ class Navbar extends React.Component {
               <nav class="navbar navbar-expand-sm navbar-light bg-light"  >
                         <ul class="navbar-nav mr-auto" alignItems="flex-end" >
                           <li class="nav-item">
+                            
                             <a class="navbar-brand" href="http://www.inaforbes.com/" >
                                 <img
                                   class="d-inline-block align-top"
@@ -31,6 +32,16 @@ class Navbar extends React.Component {
                                   />
                             </a>
                           </li>
+                          
+                          <li class="nav-item">
+                            <a class="nav-link" 
+                                style={styles.navbar}                                             
+                                href="http://www.inaforbes.com/" >
+                                   3021 4th Ave, 
+                                St Paul, VA 24283 
+                            </a>
+                          </li>
+                          
                           <li class="nav-item">
                             <a class="nav-link" 
                                 style={styles.navbar}                                             
@@ -48,30 +59,51 @@ class Navbar extends React.Component {
                           {/* <li class="nav-item">
                             <a class="nav-link"
                             style={styles.navbar}
+                            href="/info">
+                              Hours + info
+                            </a>
+                          </li> */}
+                            <li class="nav-item">
+                              <a class="nav-link"
+                              style={styles.navbar}
+                              href="/about" >
+                                About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link"
+                              style={styles.navbar}
+                              href="/contact" >
+                                Contact</a>
+                            </li>
+                          {/* <li class="nav-item">
+                            <a class="nav-link"
+                            style={styles.navbar}
+                            href="/privateevents">
+                              Private Events
+                            </a>
+                          </li> */}
+                          {/* <li class="nav-item">
+                            <a class="nav-link"
+                            style={styles.navbar}
                             href="/reservations">
                               Reservations
                             </a>
                           </li> */}
-                          <li class="nav-item">
+                            <li class="nav-item">
+                              <a 
+                                class="nav-link"  
+                                style={styles.navbar} 
+                                href="https://www.westernfronthotel.com/" >
+                                  the Western Front Hotel
+                              </a>
+                            </li>
+                          {/* <li class="nav-item">
                             <a class="nav-link"
                             style={styles.navbar}
-                            href="/contact" >
-                              Contact</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link"
-                            style={styles.navbar}
-                            href="/about" >
-                              About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a 
-                              class="nav-link"  
-                              style={styles.navbar} 
-                              href="https://www.westernfronthotel.com/" >
-                                the Western Front Hotel
+                            href="/privacypolicy">
+                              Privacy Policy
                             </a>
-                          </li>
+                          </li> */}
                         </ul>
               </nav>
               </Col>
