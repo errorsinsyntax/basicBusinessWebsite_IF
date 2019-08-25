@@ -58,22 +58,6 @@ class Home extends React.Component {
 export default Home;
 
 const styles = {
-    topLine: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      alignContent: 'space-evenly',
-      marginLeft: '125px',
-      marginRight: '125px',
-    },
-    bottomLine: {
-      width: '25%',
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      alignItems: 'center'
-    },
     center: {
       display: 'flex',
       justifyContent: 'center',

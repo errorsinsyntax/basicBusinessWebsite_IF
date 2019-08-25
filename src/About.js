@@ -41,11 +41,14 @@ const styles = {
     center: {
       display: 'flex',
       justifyContent: 'center',
+      flexDirection: 'row',
+
+      
     },
     image: {
       // height: '100vh',
       minHeight: 'calc(100vh-136px)',
-      width: '100%',
+      // width: '100%',
       justifyContent: 'center',
       flexDirection: 'column',
       marginTop: '15px',

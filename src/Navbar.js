@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link, withRouter } from "react-router-dom";
-// import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ifLogo from './images/ifLogo.png';
 
 
@@ -11,51 +11,72 @@ class Navbar extends React.Component {
       window.location.reload();
     };
     render() {
-        return (                    
-                                <nav class="navbar navbar-expand-lg navbar-light bg-light"  >
-                                          <ul class="navbar-nav mr-auto" alignItems="flex-end" >
-                                            <li class="nav-item">
-                                        <a class="navbar-brand" href="http://www.inaforbes.com/" >
-                                            <img
-                                              class="d-inline-block align-top"
-                                              src={ifLogo}
-                                              size="tiny"
-                                              style={styles.navbar2}                                             
-                                              alt="ina+forbes"
-                                              // position="center"
-                                              // floated="cener"
-                                              
-                                              />
-                                        </a>
-                                           </li>
-                                            <li class="nav-item">
-                                              <a class="nav-link" 
-                                                  style={styles.navbar}                                             
-                                                  href="http://www.inaforbes.com/" >
-                                                    Home 
-                                              </a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a 
-                                                class="nav-link"  
-                                                style={styles.navbar} 
-                                                href="https://www.westernfronthotel.com/" >
-                                                  the Western Front Hotel
-                                              </a>
-                                            </li>
-                                            <li class="nav-item">
-                                              <a class="nav-link"
-                                              style={styles.navbar}
-                                              href="/contact" >Contact</a>
-                                            </li>
-                                              <a class="nav-link"
-                                              style={styles.navbar}
-                                              href="/about" >About</a>
-                                            <li class="nav-item">
-                                        </li>
-                                              </ul>
-                                  </nav>
-          
+        return (                  
+            <Container>
+              <Row>
+                <Col>
+              <nav class="navbar navbar-expand-sm navbar-light bg-light"  >
+                        <ul class="navbar-nav mr-auto" alignItems="flex-end" >
+                          <li class="nav-item">
+                            <a class="navbar-brand" href="http://www.inaforbes.com/" >
+                                <img
+                                  class="d-inline-block align-top"
+                                  src={ifLogo}
+                                  size="tiny"
+                                  style={styles.navbar2}                                             
+                                  alt="ina+forbes"
+                                  // position="center"
+                                  // floated="cener"
+                                  
+                                  />
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" 
+                                style={styles.navbar}                                             
+                                href="http://www.inaforbes.com/" >
+                                  Home 
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link"
+                              style={styles.navbar}
+                              href="/menu">
+                                Menu
+                            </a>
+                          </li>
+                          {/* <li class="nav-item">
+                            <a class="nav-link"
+                            style={styles.navbar}
+                            href="/reservations">
+                              Reservations
+                            </a>
+                          </li> */}
+                          <li class="nav-item">
+                            <a class="nav-link"
+                            style={styles.navbar}
+                            href="/contact" >
+                              Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link"
+                            style={styles.navbar}
+                            href="/about" >
+                              About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a 
+                              class="nav-link"  
+                              style={styles.navbar} 
+                              href="https://www.westernfronthotel.com/" >
+                                the Western Front Hotel
+                            </a>
+                          </li>
+                        </ul>
+              </nav>
+              </Col>
+              </Row>
+          </Container>
         );
     }
 }
@@ -82,10 +103,11 @@ class Navbar extends React.Component {
         display: "flex",
         flexWrap: "nowrap",
         justifyContent: "center",
-        flexDirection: "row",
+        flexDirection: "column",
         marginBottom: "-10px",
         marginTop: "40px",
         width: "auto",
+        height:"auto",
         fontSize: "16px"                                            
       
       },

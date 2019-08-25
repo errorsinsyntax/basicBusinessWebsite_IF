@@ -8,6 +8,7 @@ import ScrollToTop from './ScrollToTop';
 import About from './About';
 import Home from './Home';
 import Contact from './Contact';
+import Menu from './Menu';
 
 
 class App extends React.Component {
@@ -21,7 +22,7 @@ class App extends React.Component {
            
     <Switch>
       <Route exact path='/'  component={Home}/>
-      <Route exact path='/home'  component={Home}/>
+      <Route exact path='/menu'  component={Menu}/>
       <Route exact path='/about'  component={About}/>
       <Route exact path='/contact'  component={Contact}/>
     </Switch>

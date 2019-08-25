@@ -16,7 +16,6 @@ class Contact extends React.Component {
                                         src={ifEvents}
                                         alt="info@inaforbes.com"
                                         style={styles.image}
-
                                     />
                             </a>        
                         </div>
