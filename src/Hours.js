@@ -14,7 +14,7 @@ class Hours extends React.Component{
                             <br/>
                         <div style={styles.center}>
                             <a                                 
-                                href="/info"
+                                href="#info"
 >
                                 <img
                                 class="Gallery"

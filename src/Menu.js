@@ -11,7 +11,7 @@ class Menu extends React.Component {
                         <Col>
                             <div style={styles.center}>
                                 <a class="Gallery"
-                                    href="/menu"
+                                    href="#menu"
                                     alt="ina+forbesFall2019Menu">
                                     <img 
                                     src={menuFall19}

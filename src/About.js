@@ -10,7 +10,7 @@ class About extends React.Component{
                 <Row>
                   <Col>
                   <div style={styles.center}>
-                    <a href="https://goo.gl/maps/2ydrYLowu13f6cHQ9">
+                    <a href="mailto:info@inaforbes.com">
                       <img 
                       class="Gallery"
                       src={about} 

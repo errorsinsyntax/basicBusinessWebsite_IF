@@ -45,7 +45,7 @@ class Navbar extends React.Component {
                               <li class="nav-item">
                                 <a class="nav-link" 
                                     style={styles.navbar}                                             
-                                    href="/home" >
+                                    href="https://goo.gl/maps/2ydrYLowu13f6cHQ9" >
                                       3021 4th Ave, St. Paul,Va 
                                 </a>
                               </li>
