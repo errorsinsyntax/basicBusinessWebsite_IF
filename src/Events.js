@@ -1,8 +1,8 @@
 import React from 'react';
-import contact from './images/contact.jpg';
+import ifEvents from './images/ifEvents.png';
 import {Container, Col, Row} from 'react-bootstrap';
 
-class Contact extends React.Component {
+class Events extends React.Component {
 
     render() {
         return (
@@ -13,7 +13,7 @@ class Contact extends React.Component {
                             <a href="mailto:info@inaforbes.com">         
                                     <img
                                         class="Gallery"
-                                        src={contact}
+                                        src={ifEvents}
                                         alt="info@inaforbes.com"
                                         style={styles.image}
                                     />
@@ -27,15 +27,13 @@ class Contact extends React.Component {
 
 }
 
-export default Contact;
+export default Events;
 
 const styles = {
     center: {
       display: 'flex',
       justifyContent: 'center',
       flexDirection: 'row',
-      
-
     },
     image: {
       // height: '100vh',
@@ -58,20 +56,6 @@ const styles = {
       minHeight: 'calc(100vh-136px)',
       width: '100%',
       marginTop: '75px',
-    },
-    subtitle: {
-      height: '250px',
-    },
-    caption: {
-      height: '50px',
-      minHeight: 'calc(100vh-136px)',
-      // width: '100%',
-      justifyContent: 'center',
-      flexDirection: 'column',
-      marginTop: '15px',
-      display: 'flex',
-      alignItems: 'flex-start',
-      alignContent: 'flex-start',
     },
       body: {
         display: "flex",

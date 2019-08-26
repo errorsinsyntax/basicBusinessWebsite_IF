@@ -9,6 +9,9 @@ import About from './About';
 import Home from './Home';
 import Contact from './Contact';
 import Menu from './Menu';
+import Hours from './Hours';
+import Events from './Events';
+import Privacy from './Privacy';
 
 
 class App extends React.Component {
@@ -18,19 +21,20 @@ class App extends React.Component {
           <div style={styles.nav}>
               <Navbar/>
           </div> 
-          <ScrollToTop> 
-           
-    <Switch>
-      <Route exact path='/'  component={Home}/>
-      <Route exact path='/menu'  component={Menu}/>
-      <Route exact path='/about'  component={About}/>
-      <Route exact path='/contact'  component={Contact}/>
-    </Switch>
-
-    </ScrollToTop>
+            <ScrollToTop>    
+                <Switch>
+                  <Route exact path='/'  component={Home}/>
+                  <Route exact path='/home'  component={Home}/>
+                  <Route exact path='/menu'  component={Menu}/>
+                  <Route exact path='/info'  component={Hours}/>
+                  <Route exact path='/about'  component={About}/>
+                  <Route exact path='/contact'  component={Contact}/>
+                  <Route exact path='/events'  component={Events}/>
+                  <Route exact path='/privacy'  component={Privacy}/>
+                </Switch>
+            </ScrollToTop>
     </Fragment>
-  );
-
+   );
   }
 }
 
@@ -68,20 +72,7 @@ const styles = {
     alignItems: 'flex-start',
     alignContent: 'flex-start',
   },
-  title: {
-    // height: '100%',
-    textColor:'black',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginLeft: '-200px',
-    marginRight: '-200px',
-    minHeight: 'calc(100vh-136px)',
-    width: '100%',
-    marginTop: '75px',
-  },
-  subtitle: {
-    height: '250px',
-  },
+ 
   caption: {
     height: '50px',
     minHeight: 'calc(100vh-136px)',

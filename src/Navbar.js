@@ -1,7 +1,9 @@
 import React from "react";
 // import { Link, withRouter } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col } from "react-bootstrap";
+// import ifWMenu from './images/ifWMenu.jpg';
 import ifLogo from './images/ifLogo.png';
+
 
 
 
@@ -12,103 +14,110 @@ class Navbar extends React.Component {
     };
     render() {
         return (                  
-            <Container>
-              <Row>
-                <Col>
-              <nav class="navbar navbar-expand-sm navbar-light bg-light"  >
-                        <ul class="navbar-nav mr-auto" alignItems="flex-end" >
-                          <li class="nav-item">
-                            
-                            <a class="navbar-brand" href="http://www.inaforbes.com/" >
-                                <img
-                                  class="d-inline-block align-top"
-                                  src={ifLogo}
-                                  size="tiny"
-                                  style={styles.navbar2}                                             
-                                  alt="ina+forbes"
-                                  // position="center"
-                                  // floated="cener"
-                                  
-                                  />
-                            </a>
-                          </li>
-                          
-                          <li class="nav-item">
-                            <a class="nav-link" 
-                                style={styles.navbar}                                             
-                                href="http://www.inaforbes.com/" >
-                                   3021 4th Ave, 
-                                St Paul, VA 24283 
-                            </a>
-                          </li>
-                          
-                          <li class="nav-item">
-                            <a class="nav-link" 
-                                style={styles.navbar}                                             
-                                href="http://www.inaforbes.com/" >
-                                  Home 
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link"
-                              style={styles.navbar}
-                              href="/menu">
-                                Menu
-                            </a>
-                          </li>
-                          {/* <li class="nav-item">
-                            <a class="nav-link"
-                            style={styles.navbar}
-                            href="/info">
-                              Hours + info
-                            </a>
-                          </li> */}
-                            <li class="nav-item">
-                              <a class="nav-link"
-                              style={styles.navbar}
-                              href="/about" >
-                                About</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link"
-                              style={styles.navbar}
-                              href="/contact" >
-                                Contact</a>
-                            </li>
-                          {/* <li class="nav-item">
-                            <a class="nav-link"
-                            style={styles.navbar}
-                            href="/privateevents">
-                              Private Events
-                            </a>
-                          </li> */}
-                          {/* <li class="nav-item">
-                            <a class="nav-link"
-                            style={styles.navbar}
-                            href="/reservations">
-                              Reservations
-                            </a>
-                          </li> */}
-                            <li class="nav-item">
-                              <a 
-                                class="nav-link"  
-                                style={styles.navbar} 
-                                href="https://www.westernfronthotel.com/" >
-                                  the Western Front Hotel
-                              </a>
-                            </li>
-                          {/* <li class="nav-item">
-                            <a class="nav-link"
-                            style={styles.navbar}
-                            href="/privacypolicy">
-                              Privacy Policy
-                            </a>
-                          </li> */}
-                        </ul>
+            <body>
+              <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                  <a 
+                    href="/home" 
+                    class="navbar-brand" >
+                                        <img
+                                          class="d-inline-block align-top"
+                                          src={ifLogo}
+                                          size="tiny"
+                                          style={styles.navbar2}                                             
+                                          alt="ina+forbes"
+                                          // position="center"
+                                          // floated="cener"
+                                          />
+                                    </a>
+                          <button 
+                              class="navbar-toggler" 
+                              data-toggle="collapse" 
+                              data-target="#navbarMenu" 
+                          >
+                                <span class="navbar-toggler-icon" >                                       
+                                </span>
+                          </button>
+                          <div 
+                            class="collapse navbar-collapse" 
+                            id="navbarMenu"
+                           >
+                            <ul class="navbar-nav mr-auto" >
+                              <li class="nav-item">
+                                <a class="nav-link" 
+                                    style={styles.navbar}                                             
+                                    href="/home" >
+                                      3021 4th Ave, St. Paul,Va 
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" 
+                                    style={styles.navbar}                                             
+                                    href="/home" >
+                                      Home 
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link"
+                                  style={styles.navbar}
+                                  href="/menu">
+                                    Menu
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link"
+                                style={styles.navbar}
+                                href="/info">
+                                  Hours + info
+                                </a>
+                              </li>
+                                <li class="nav-item">
+                                  <a class="nav-link"
+                                  style={styles.navbar}
+                                  href="/about" >
+                                    About</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link"
+                                  style={styles.navbar}
+                                  href="/contact" >
+                                    Contact</a>
+                                </li>
+                              <li class="nav-item">
+                                <a class="nav-link"
+                                style={styles.navbar}
+                                href="/events">
+                                  Private Events
+                                </a>
+                              </li>
+                              {/* <li class="nav-item">
+                                <a class="nav-link"
+                                style={styles.navbar}
+                                href="/reservations">
+                                Reservations
+                                </a>
+                              </li> */}
+                              <li class="nav-item">
+                                <a 
+                                  class="nav-link"  
+                                  style={styles.navbar} 
+                                  href="https://www.westernfronthotel.com/" >
+                                    the Western Front Hotel
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link"
+                                style={styles.navbar}
+                                href="/privacy">
+                                  Privacy Policy
+                                </a>
+                              </li>
+                              </ul>
+      </div>
               </nav>
-              </Col>
-              </Row>
-          </Container>
+              
+              </body>
+              
+              
         );
     }
 }
@@ -117,11 +126,11 @@ class Navbar extends React.Component {
   
   const styles ={
     image: {
-        padding: "2px",
-        marginBottom: "-40px",
-        marginTop: "-10px",
-        height: "100px",
-        width: "auto"
+      padding: "2px",
+      marginBottom: "-40px",
+      marginTop: "-10px",
+      height: "100px",
+      width: "auto"
       },
       background: {
         backgroundColor: "rgb(35, 35, 35)",
@@ -140,7 +149,7 @@ class Navbar extends React.Component {
         marginTop: "40px",
         width: "auto",
         height:"auto",
-        fontSize: "16px"                                            
+        fontSize: "14px"                                            
       
       },
       navbar2: {
@@ -174,4 +183,3 @@ class Navbar extends React.Component {
   
       },
     };
-

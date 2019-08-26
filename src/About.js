@@ -1,54 +1,42 @@
 import React from 'react';
-import NL819Bio from './images/NL819Bio.jpg';
+import about from './images/about.jpg';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 class About extends React.Component{
     render(){
         return (
-              <div style={styles.center}>
-
-                   <img 
-                   class="Gallery"
-                   src={NL819Bio} 
-                   alt="Chef T"
-                   style={styles.image}
-
-                   />
-              
-              </div>
+              <Container>
+                <Row>
+                  <Col>
+                  <div style={styles.center}>
+                    <a href="https://goo.gl/maps/2ydrYLowu13f6cHQ9">
+                      <img 
+                      class="Gallery"
+                      src={about} 
+                      alt="about ina + forbes"
+                      style={styles.image}
+                      />
+                    </a>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
         );
     }
 }
 export default About;
 
 const styles = {
-    topLine: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      alignContent: 'space-evenly',
-      marginLeft: '125px',
-      marginRight: '125px',
-    },
-    bottomLine: {
-      width: '25%',
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      alignItems: 'center'
-    },
     center: {
       display: 'flex',
       justifyContent: 'center',
       flexDirection: 'row',
-
-      
     },
     image: {
       // height: '100vh',
       minHeight: 'calc(100vh-136px)',
-      // width: '100%',
+      width: '100%',
       justifyContent: 'center',
       flexDirection: 'column',
       marginTop: '15px',
