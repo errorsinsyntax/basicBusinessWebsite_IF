@@ -21,7 +21,9 @@ class Reservations extends React.Component {
                 </Row>
                 <Row>
                     <Col>
-                        <iframe src="https://tableagent.com/iframe/inaforbes/"  title="reservations" style={styles.table} width="100%" height="100%"></iframe>
+                        <div style={styles.center}>
+                            <iframe src="https://tableagent.com/iframe/inaforbes/"  title="reservations" style={styles.table} width="100%" height="100%"></iframe>
+                        </div> 
                     </Col>
                 </Row>
             </Container>
