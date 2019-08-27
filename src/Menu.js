@@ -19,14 +19,16 @@ class Menu extends React.Component {
                                     style={styles.image}
                                     />    
                                     </a>
-                                    </div>
-                                    <br/>
+                            </div>
+                                <br/>
                                     <a 
                                         class="link"
                                         style={styles.center2}
-                                        href="/reservations" > Make A Reservation Today!</a>
-                                        <br/>
-                                        <br/>
+                                        href="/reservations" > 
+                                        Make A Reservation Today!
+                                    </a>
+                                <br/>
+                                <br/>
                         </Col>
                     </Row>
                     <br/>

@@ -73,50 +73,10 @@ const MainCarousel = () => (
   export default (MainCarousel);
 
   const styles = {
-    topLine: {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      alignContent: 'space-evenly',
-      marginLeft: '125px',
-      marginRight: '125px',
-    },
-    bottomLine: {
-      width: '25%',
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      alignItems: 'center'
-    },
-    center: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-    },
     image: {
-      // height: '100vh',
       minHeight: 'calc(100vh-136px)',
       width: '100%',
       marginTop: '75px',
     },
-    title: {
-      // height: '100%',
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'center',
-      flexWrap: 'nowrap',
-      alignItems: 'flex-start',
-      alignContent: 'flex-start',
-      marginLeft: '-200px',
-      marginRight: '-200px',
-    },
-    subtitle: {
-      height: '250px',
-    },
-    caption: {
-      height: '550px',
-    },
-  
   }
   

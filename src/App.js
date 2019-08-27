@@ -1,7 +1,5 @@
 import React, {Fragment} from 'react';
-// import logo from './i+f logos.png';
 import './App.css';
-// import { Container, Row, Col, } from 'react-bootstrap';
 import Navbar from './Navbar';
 import {Switch, Route} from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';

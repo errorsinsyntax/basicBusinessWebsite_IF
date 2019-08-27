@@ -9,15 +9,15 @@ class About extends React.Component{
               <Container>
                 <Row>
                   <Col>
-                  <div style={styles.center}>
-                    <a href="mailto:info@inaforbes.com">
-                      <img 
-                      class="Gallery"
-                      src={about} 
-                      alt="about ina + forbes"
-                      style={styles.image}
-                      />
-                    </a>
+                    <div style={styles.center}>
+                      <a href="mailto:info@inaforbes.com">
+                          <img 
+                          class="Gallery"
+                          src={about} 
+                          alt="about ina + forbes"
+                          style={styles.image}
+                          />
+                      </a>
                     </div>
                   </Col>
                 </Row>
@@ -34,7 +34,6 @@ const styles = {
       flexDirection: 'row',
     },
     image: {
-      // height: '100vh',
       minHeight: 'calc(100vh-136px)',
       width: '100%',
       justifyContent: 'center',
@@ -44,7 +43,6 @@ const styles = {
       alignItems: 'flex-start',
       alignContent: 'flex-start',
     },
-  
   }
   
    

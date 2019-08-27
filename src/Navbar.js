@@ -22,8 +22,6 @@ class Navbar extends React.Component {
                         size="tiny"
                         style={styles.navbar2}                                             
                         alt="ina+forbes"
-                        // position="center"
-                        // floated="cener"
                         />
                   </a>
                     <button 

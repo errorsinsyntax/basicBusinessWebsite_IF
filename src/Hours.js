@@ -40,7 +40,6 @@ const styles = {
   
       },
       image: {
-        // height: '100vh',
         minHeight: 'calc(100vh-136px)',
         width: '100%',
         justifyContent: 'center',

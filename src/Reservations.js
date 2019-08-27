@@ -10,19 +10,18 @@ class Reservations extends React.Component {
                     <Col>
                         <div style={styles.center}>
                            <a href="/reservations"> 
-                           <img 
-                            class="Gallery"
-                            src={Res}
-                            alt="Reservations @ ina+forbes"
-                            style={styles.image}/> 
+                            <img 
+                                class="Gallery"
+                                src={Res}
+                                alt="Reservations @ ina+forbes"
+                                style={styles.image}/> 
                             </a>
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                    <iframe src="https://tableagent.com/iframe/inaforbes/"  title="reservations" style={styles.table} width="100%" height="100%"></iframe>
-
+                        <iframe src="https://tableagent.com/iframe/inaforbes/"  title="reservations" style={styles.table} width="100%" height="100%"></iframe>
                     </Col>
                 </Row>
             </Container>
@@ -36,7 +35,7 @@ const styles = {
     table : {
         border: "0 px none", 
         minWidth: "375px", 
-     minHeight: "736px"
+     minHeight: "506px"
     },
     center: {
         display: 'flex',

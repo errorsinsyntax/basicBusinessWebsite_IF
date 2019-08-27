@@ -11,12 +11,12 @@ class Events extends React.Component {
                     <Col>    
                         <div style={styles.center}>
                             <a href="mailto:info@inaforbes.com">         
-                                    <img
-                                        class="Gallery"
-                                        src={ifEvents}
-                                        alt="info@inaforbes.com"
-                                        style={styles.image}
-                                    />
+                                <img
+                                    class="Gallery"
+                                    src={ifEvents}
+                                    alt="info@inaforbes.com"
+                                    style={styles.image}
+                                />
                             </a>        
                         </div>
                     </Col>
