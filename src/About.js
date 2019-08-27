@@ -44,48 +44,6 @@ const styles = {
       alignItems: 'flex-start',
       alignContent: 'flex-start',
     },
-    title: {
-      // height: '100%',
-      textColor:'black',
-      flexDirection: 'row',
-      justifyContent: 'center',
-      marginLeft: '-200px',
-      marginRight: '-200px',
-      minHeight: 'calc(100vh-136px)',
-      width: '100%',
-      marginTop: '75px',
-    },
-    subtitle: {
-      height: '250px',
-    },
-    caption: {
-      height: '50px',
-      minHeight: 'calc(100vh-136px)',
-      // width: '100%',
-      justifyContent: 'center',
-      flexDirection: 'column',
-      marginTop: '15px',
-      display: 'flex',
-      alignItems: 'flex-start',
-      alignContent: 'flex-start',
-    },
-      body: {
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh"
-      },
-      footer: {
-        margin: "auto auto 0 auto",
-        position: 'fixed',
-        zIndex: '99',
-        width: '100%'
-  
-      },
-      nav: {
-        // position: 'fixed',
-        zIndex: '99',
-        width: '100%'
-      }
   
   }
   

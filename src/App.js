@@ -11,6 +11,7 @@ import Contact from './Contact';
 import Menu from './Menu';
 import Hours from './Hours';
 import Events from './Events';
+import Reservations from './Reservations';
 import Privacy from './Privacy';
 
 
@@ -30,6 +31,7 @@ class App extends React.Component {
                   <Route exact path='/about'  component={About}/>
                   <Route exact path='/contact'  component={Contact}/>
                   <Route exact path='/events'  component={Events}/>
+                  <Route exaxct path='/reservations' component={Reservations}/>
                   <Route exact path='/privacy'  component={Privacy}/>
                 </Switch>
             </ScrollToTop>
@@ -41,61 +43,6 @@ class App extends React.Component {
 export default App;
 
 const styles = {
-  topLine: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    alignContent: 'space-evenly',
-    marginLeft: '125px',
-    marginRight: '125px',
-  },
-  bottomLine: {
-    width: '25%',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center'
-  },
-  center: {
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  image: {
-    // height: '100vh',
-    minHeight: 'calc(100vh-136px)',
-    width: '100%',
-    justifyContent: 'center',
-    flexDirection: 'column',
-    marginTop: '15px',
-    display: 'flex',
-    alignItems: 'flex-start',
-    alignContent: 'flex-start',
-  },
- 
-  caption: {
-    height: '50px',
-    minHeight: 'calc(100vh-136px)',
-    // width: '100%',
-    justifyContent: 'center',
-    flexDirection: 'column',
-    marginTop: '15px',
-    display: 'flex',
-    alignItems: 'flex-start',
-    alignContent: 'flex-start',
-  },
-    body: {
-      display: "flex",
-      flexDirection: "column",
-      minHeight: "100vh"
-    },
-    footer: {
-      margin: "auto auto 0 auto",
-      position: 'fixed',
-      zIndex: '99',
-      width: '100%'
-
-    },
     nav: {
       // position: 'fixed',
       zIndex: '99',

@@ -19,9 +19,17 @@ class Menu extends React.Component {
                                     style={styles.image}
                                     />    
                                     </a>
-                            </div>
+                                    </div>
+                                    <br/>
+                                    <a 
+                                        class="link"
+                                        style={styles.center2}
+                                        href="/reservations" > Make A Reservation Today!</a>
+                                        <br/>
+                                        <br/>
                         </Col>
                     </Row>
+                    <br/>
                 </Container>
         )
     }
@@ -35,11 +43,15 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'row',
-        
-  
       },
+    center2: {
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'row',
+        fontSize: "30px",
+      },
+
       image: {
-        // height: '100vh',
         minHeight: 'calc(100vh-136px)',
         width: '100%',
         justifyContent: 'center',

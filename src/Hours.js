@@ -8,10 +8,6 @@ class Hours extends React.Component{
             <Container>
                 <Row>
                     <Col>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
                         <div style={styles.center}>
                             <a                                 
                                 href="#info"
@@ -24,12 +20,7 @@ class Hours extends React.Component{
                                 />
                             </a>
                         </div>
-                        <br/>
-                        <br/>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <br/>
+                       
                     </Col>
                 </Row>
 
