@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from './carousel/Carousel';
 import { Container, Row, Col, } from 'react-bootstrap';
-import ifGOhp from './images/ifGOhp.jpg';
+import HomeMain from './images/HomeMain.jpg';
 import SitL from './images/SitL.png';
 
 
@@ -21,7 +21,7 @@ class Home extends React.Component {
                                     justifyContent="center" 
                                     flexdirection="column"
                                         alt="GrandOpeningEvent"
-                                        src={ifGOhp}
+                                        src={HomeMain}
                                         style={styles.image}
                                     />
                                 </Col>

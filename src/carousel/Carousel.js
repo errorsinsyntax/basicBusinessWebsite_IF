@@ -3,8 +3,7 @@ import { Carousel, Container } from 'react-bootstrap';
 import c1 from '../images/c1.jpg';
 import c2 from '../images/c2.jpg';
 import c3 from '../images/c3.jpg';
-import FlyerGO2 from '../images/FlyerGO2.jpg'
-import FlyerGO from '../images/FlyerGO.jpg'
+
 
 
 const MainCarousel = () => (
@@ -15,7 +14,7 @@ const MainCarousel = () => (
               indicators={false}
               interval={8000}
             >
-              <Carousel.Item>
+              {/* <Carousel.Item>
                 <img
                   className="Gallery"
                   justifyContent="center" 
@@ -34,7 +33,7 @@ const MainCarousel = () => (
                     src={FlyerGO}
                     style={styles.image}
                 />
-              </Carousel.Item>
+              </Carousel.Item> */}
               <Carousel.Item>
                 <img
                   className="Gallery"
