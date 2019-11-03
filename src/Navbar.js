@@ -52,6 +52,13 @@ class Navbar extends React.Component {
                               </a>
                             </li>
                             <li class="nav-item">
+                              <a class="nav-link active" 
+                                  style={styles.navbar}                                             
+                                  href="https://www.facebook.com/events/2415172928723906/" >
+                                    Harvest Social 
+                              </a>
+                            </li>
+                            <li class="nav-item">
                               <a class="nav-link active"
                                 style={styles.navbar}
                                 href="/menu">

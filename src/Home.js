@@ -17,14 +17,18 @@ class Home extends React.Component {
                     </div>
                             <Row className="justify-content-space-evenly">
                                 <Col>
+                                <a 
+                                href="https://www.facebook.com/events/2415172928723906/">
+                                    
                                     <img
                                     className="Gallery"
                                     justifyContent="center" 
                                     flexdirection="column"
-                                        alt="GrandOpeningEvent"
-                                        src={HomeMain}
-                                        style={styles.image}
+                                    alt="GrandOpeningEvent"
+                                    src={HomeMain}
+                                    style={styles.image}
                                     />
+                                    </a>
                                 </Col>
                             </Row>
                             <Row className="justify-content-space-evenly">
