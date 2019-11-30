@@ -19,18 +19,6 @@ class App extends React.Component {
   render(){
   return (
     <div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
    <a 
    style={styles.nav}                                             
    href="https://www.google.com/search?q=is+it+illegal+to+not+pay+employees+in+virginia&oq=is+it+illegal+to+not+pay+employees+in+virginia&aqs=chrome..69i57.12488j0j7&sourceid=chrome&ie=UTF-8"> 
