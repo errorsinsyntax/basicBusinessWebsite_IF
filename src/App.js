@@ -16,7 +16,8 @@ import Privacy from './Privacy';
 class App extends React.Component {
   render(){
   return (
-    <Fragment>
+    <Fragment
+  
           <div style={styles.nav}>
               <Navbar/>
           </div> 
