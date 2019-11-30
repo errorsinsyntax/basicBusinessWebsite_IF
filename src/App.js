@@ -12,6 +12,7 @@ import Hours from './Hours';
 import Events from './Events';
 import Reservations from './Reservations';
 import Privacy from './Privacy';
+import Mainn from './images/Mainn.jpg';
 
 
 class App extends React.Component {
@@ -32,8 +33,16 @@ class App extends React.Component {
     <br/>
    <a 
    style={styles.nav}                                             
-   href="https://www.google.com/search?q=is+it+illegal+to+not+pay+employees+in+virginia&oq=is+it+illegal+to+not+pay+employees+in+virginia&aqs=chrome..69i57.12488j0j7&sourceid=chrome&ie=UTF-8"> Chef T<br/>Do The Right Thing & Pay What You Owe! </a>
-   </div>
+   href="https://www.google.com/search?q=is+it+illegal+to+not+pay+employees+in+virginia&oq=is+it+illegal+to+not+pay+employees+in+virginia&aqs=chrome..69i57.12488j0j7&sourceid=chrome&ie=UTF-8"> 
+ <img
+                        class="d-inline-block align-top"
+                        src={Mainn}
+                        size="tiny"
+                        style={styles.nav}                                             
+                        alt="ina+forbes illegal practices"
+                        />   
+                         </a>
+                        </div>
    // <Fragment>
     //       <div style={styles.nav}>
     //           <Navbar/>
