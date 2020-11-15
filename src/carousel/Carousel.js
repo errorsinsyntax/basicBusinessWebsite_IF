@@ -14,7 +14,7 @@ const MainCarousel = () => (
               indicators={false}
               interval={8000}
             >
-              {/* <Carousel.Item>
+              <Carousel.Item>
                 <img
                   className="Gallery"
                   justifyContent="center" 
@@ -33,7 +33,7 @@ const MainCarousel = () => (
                     src={FlyerGO}
                     style={styles.image}
                 />
-              </Carousel.Item> */}
+              </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="Gallery"

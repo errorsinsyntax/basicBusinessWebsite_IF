@@ -4,12 +4,6 @@
   flex-direction: column;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 45vmin;
-  pointer-events: none;
-}
-
 .App-header {
   min-height: 0vh;
   display: flex;

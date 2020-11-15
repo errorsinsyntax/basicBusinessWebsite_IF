@@ -1,9 +1,7 @@
 import React from 'react';
 import Carousel from './carousel/Carousel';
 import { Container, Row, Col, } from 'react-bootstrap';
-import HomeMain from './images/HomeMain.jpg';
 import fallCalendar from './images/fallCalendar.jpg';
-import fallHours from './images/fallHours.jpg';
 import SitL from './images/SitL.png';
 
 
@@ -18,40 +16,12 @@ class Home extends React.Component {
                     </div>
                             <Row className="justify-content-space-evenly">
                                 <Col>
-                                <a 
-                                href="https://www.facebook.com/events/2415172928723906/">
-                                    
-                                    <img
-                                    className="Gallery"
-                                    justifyContent="center" 
-                                    flexdirection="column"
-                                    alt="Only@Ina's"
-                                    src={HomeMain}
-                                    style={styles.image}
-                                    />
-                                    </a>
-                                </Col>
-                            </Row>
-                            <Row className="justify-content-space-evenly">
-                                <Col>
                                     <img
                                     className="Gallery"
                                     justifyContent="center" 
                                     flexdirection="column"
                                         alt="autumn calendar"
                                         src={fallCalendar}
-                                        style={styles.image}
-                                    />
-                                </Col>
-                            </Row>
-                            <Row className="justify-content-space-evenly">
-                                <Col>
-                                    <img
-                                    className="Gallery"
-                                    justifyContent="center" 
-                                    flexdirection="column"
-                                        alt="fall Hours"
-                                        src={fallHours}
                                         style={styles.image}
                                     />
                                 </Col>
