@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from './carousel/Carousel';
 import { Container, Row, Col, } from 'react-bootstrap';
-import fallCalendar from './images/fallCalendar.jpg';
+import homeImageUnsplash from './images/homeImageUnsplash.jpg';
 import SitL from './images/SitL.png';
 
 
@@ -21,7 +21,7 @@ class Home extends React.Component {
                                     justifyContent="center" 
                                     flexdirection="column"
                                         alt="autumn calendar"
-                                        src={fallCalendar}
+                                        src={homeImageUnsplash}
                                         style={styles.image}
                                     />
                                 </Col>
@@ -61,9 +61,10 @@ const styles = {
     image: {
       minHeight: 'calc(100vh-136px)',
       width: '100%',
+      height: '100%',
       justifyContent: 'center',
       flexDirection: 'column',
-      marginTop: '15px',
+      marginTop: '5px',
       display: 'flex',
       alignItems: 'flex-start',
       alignContent: 'flex-start',

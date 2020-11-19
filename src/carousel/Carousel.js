@@ -18,26 +18,6 @@ const MainCarousel = () => (
                 <img
                   className="Gallery"
                   justifyContent="center" 
-                  flexdirection="column"
-                  alt="Grand Opening Details"
-                  src={FlyerGO2}
-                  style={styles.image}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="Gallery"
-                    justifyContent="center" 
-                    flexdirection="column"
-                    alt="Featured Talent"
-                    src={FlyerGO}
-                    style={styles.image}
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="Gallery"
-                  justifyContent="center" 
                   flexdirection="column"  
                   alt="c1"
                   src={c1}

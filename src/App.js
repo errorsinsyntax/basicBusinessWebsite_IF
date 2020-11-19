@@ -45,9 +45,9 @@ export default App;
 
 const styles = {
     nav: {
-      // position: 'fixed',
+      position: 'fixed',
       zIndex: '99',
-      width: '100%'
+      width: '100%',
     }
 
 }

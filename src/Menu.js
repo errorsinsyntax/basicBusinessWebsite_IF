@@ -23,8 +23,8 @@ class Menu extends React.Component {
                                 <br/>
                                     <a 
                                         class="link"
-                                        style={styles.center2}
-                                        href="/reservations" > 
+                                        style={styles.resLink}
+                                        href="/reservations"> 
                                         Make A Reservation Today!
                                     </a>
                                 <br/>
@@ -46,11 +46,12 @@ const styles = {
         justifyContent: 'center',
         flexDirection: 'row',
       },
-    center2: {
+      resLink: {
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'row',
-        fontSize: "30px",
+        fontSize: "25px",
+        color:"black",
       },
 
       image: {

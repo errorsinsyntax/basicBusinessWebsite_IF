@@ -11,7 +11,7 @@ class Navbar extends React.Component {
     };
     render() {
         return (                  
-              <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+              <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-dark ">
                   <a 
                     href="/home" 
                     class="navbar-brand" 
@@ -20,7 +20,7 @@ class Navbar extends React.Component {
                         class="d-inline-block align-top"
                         src={ifWlogo}
                         size="tiny"
-                        style={styles.navbar2}                                             
+                        style={styles.logo}                                             
                         alt="ina+forbes"
                         />
                   </a>
@@ -122,26 +122,16 @@ class Navbar extends React.Component {
   
   export default Navbar;
   
-  const styles ={
-      navbar: {
+  const styles =
+  {
+      logo: {
         display: "flex",
-        flexWrap: "nowrap",
-        justifyContent: "center",
-        flexDirection: "column",
-        marginBottom: "-10px",
-        marginTop: "40px",
-        width: "auto",
-        height:"auto",
-        fontSize: "14px",
-      },
-      navbar2: {
-        display: "flex",
-        flexWrap: "nowrap",
-        justifyContent: "center",
-        flexDirection: "row",
-        marginBottom: "-10px",
-        marginTop: "10px",
-        width: "auto",
+        // flexWrap: "nowrap",
+        // justifyContent: "center",
+        // flexDirection: "row",
+        // marginBottom: "-10px",
+        // marginTop: "10px",
+        // width: "auto",
         height: "100px",      
       },
     };
